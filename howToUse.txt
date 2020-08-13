@@ -1,0 +1,10 @@
+*this project is developed with Angular 9 
+*using just the client side to develop the test 
+*i stored the data (https://s3.amazonaws.com/intercom-take-home-test/customers.txt) in file txt on assets/customers.txt in the project 
+
+--HOW TO USE--
+
+* excute the command "npm install" to install dependencies.
+*execute the command "ng serve " to run the project.
+*open "http://localhost:4200/" to access the project on navigator.
+*to get the list of customers to invite click the button "DownloadInvitedCustomers" : a file text is downloaded contains the list of customers to invite sorted by user-id.

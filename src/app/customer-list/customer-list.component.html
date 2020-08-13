@@ -1,0 +1,26 @@
+
+<div class="container">
+  <a [href]="fileUrl" download="file.txt">
+    <button class="btn btn-primary" [href]="fileUrl" download="file.txt"
+      (click)="calculateCustomerLocation(this.officeLocation, this.customers)">Download Invited Customers</button>
+  </a>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Longitude</th>
+        <th>Latitude</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.user_id }}</td>
+        <td>{{ customer.name }}</td>
+        <td>{{ customer.longitude }}</td>
+        <td>{{ customer.latitude }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
